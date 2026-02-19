@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&family=Gaegu:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. 전체 기본 폰트 설정 (동글동글 읽기 편한 고운돋움) */
+body {
+  margin: 0;
+  font-family: 'Gowun Dodum', 'Gaegu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6; /* 줄 간격을 넓혀서 더 잘 보이게! */
+}
+
+/* 3. 제목용 폰트 클래스 (따로 쓰고 싶을 때 사용) */
+.font-jua {
+  font-family: 'Jua', sans-serif;
+}

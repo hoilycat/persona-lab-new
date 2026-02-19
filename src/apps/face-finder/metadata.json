@@ -1,0 +1,8 @@
+
+{
+  "name": "AI 동물 관상 테스트 (로컬 분석)",
+  "description": "카메라로 얼굴을 찍으면 12가지 정교한 동물 관상 데이터 중 당신과 가장 닮은 동물을 매칭해줍니다.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

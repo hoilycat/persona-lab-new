@@ -21,6 +21,7 @@ jobs:
         node-version: '20' # 최신 LTS 버전 사용
         cache: 'npm'       # npm 패키지 설치 속도 향상
 
+
     # 3. 의존성 패키지 설치
     - name: Install Dependencies
       run: npm install

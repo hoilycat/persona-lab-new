@@ -62,8 +62,4 @@ npm run dev
     },
   },
 ])
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> fc69f5c (feat: Update Persona Lab UI for AWS Deployment)

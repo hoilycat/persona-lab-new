@@ -5,7 +5,7 @@
 ## 📌 프로젝트 소개
 Persona Lab은 5가지의 개별적인 재미있는 웹 애플리케이션을 하나의 포털로 통합한 프로젝트입니다. 사용자는 얼굴 인식, 성격 분석, 미니 게임 등 다양한 테마파크 같은 경험을 한곳에서 즐길 수 있습니다.
 
-##🌐 링크
+## 🌐 링크
 - url: (http://persona-lab-2026.s3-website-us-east-1.amazonaws.com/)
 - amplify url: (https://master.dlzsbc51blf9z.amplifyapp.com/)
 

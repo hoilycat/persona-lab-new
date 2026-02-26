@@ -10,11 +10,14 @@ Persona Lab은 5가지의 개별적인 재미있는 웹 애플리케이션을 �
 - amplify url: (https://master.dlzsbc51blf9z.amplifyapp.com/)
 
 ## 🛠 기술 스택 (Tech Stack)
-- **프론트엔드 (Frontend):** React (v19), React Router DOM (v7)
-- **빌드 툴 (Build Tool):** Vite
-- **주요 라이브러리 (Key Libraries):**
-  - `face-api.js` & `react-webcam`: AI 비전 기반 얼굴 인식 및 웹캠 연동
-  - `html2canvas`: 결과 화면 캡처 및 이미지 저장 기능
+
+| 분류 | 기술 스택 | 상세 내용 |
+| :--- | :--- | :--- |
+| **Frontend** | React (v19) | 최신 기능을 활용한 사용자 인터페이스 구축 |
+| **Routing** | React Router DOM (v7) | 효율적인 페이지 전환 및 경로 관리 |
+| **Build Tool** | Vite | 빠르고 가벼운 차세대 프론트엔드 빌드 도구 |
+| **AI Vision** | face-api.js, react-webcam | AI 비전 기반 얼굴 인식 및 웹캠 실시간 연동 |
+| **Utilities** | html2canvas | 결과 화면 캡처 및 이미지 저장 기능 구현 |
 
 ## 🌟 주요 기능 (Features)
 
@@ -36,34 +39,33 @@ Persona Lab은 5가지의 개별적인 재미있는 웹 애플리케이션을 �
 
 ## 🧠 사용된 AI 모델 (AI Models)
 이 프로젝트는 `face-api.js`의 경량화된 모델들을 사용하여 브라우저 환경에서 실시간 얼굴 추론을 수행합니다. 빠른 인식을 위해 `src/assets/models` 폴더에 다음 파일들이 포함되어 있습니다.
-- **Tiny Face Detector**: 웹캠 환경의 실시간 감지에 최적화된 가볍고 빠른 얼굴 검출 모델
-- **Face Landmark 68 Net**: 얼굴의 눈, 코, 입, 턱선 등 68개의 주요 특징점을 정밀하게 추적하는 모델
-- **Face Expression Recognition Net**: (사용 시) 표정 분석을 위한 모델
+| 모델명 (Model Name) | 역할 및 기능 | 특징 |
+| :--- | :--- | :--- |
+| **Tiny Face Detector** | 실시간 얼굴 검출 (Detection) | 웹캠 환경에 최적화된 가볍고 빠른 감지 성능 제공 |
+| **Face Landmark 68 Net** | 68개 특징점 추적 (Landmarks) | 눈, 코, 입, 턱선 등 얼굴의 주요 포인트를 정밀 추적 |
+| **Face Expression Net** | 표정 분석 (Recognition) | 사용자의 감정 상태(행복, 슬픔, 놀람 등)를 실시간 분석 |
 
-## 📂 프로젝트 구조 (Directory Structure)
+## 📁 프로젝트 구조 (Directory Structure)
+
 ```text
 src/
- ┣ assets/models/      # 🧠 face-api.js가 얼굴을 인식하기 위해 참조하는 AI 학습 모델 사전
- ┣ apps/               # 🚀 개별 애플리케이션 모음
- ┃ ┣ face-finder/      # 얼굴 인식 기반 앱 1
- ┃ ┣ mbti/             # 부캐 성격 분석 앱
- ┃ ┣ my-animal-face/   # 얼굴 인식 기반 앱 2
- ┃ ┣ my-game-app/      # 3가지 미니 게임
- ┃ ┗ theme-park/       # 데스티니 월드 (전생/이상형)
- ┗ ...
+├── assets/models/      # 🧠 face-api.js AI 학습 모델 파일
+└── apps/               # 🚀 개별 애플리케이션 모음
+    ├── face-finder/    # 얼굴 인식 기반 앱 1
+    ├── mbti/           # 부캐 성향 분석 앱
+    ├── my-animal-face/ # 얼굴 인식 기반 앱 2
+    ├── my-game-app/    # 3가지 미니 게임
+    └── theme-park/     # 데스티니 월드 (전생/이상형)
+```
 
-🚀 실행 방법 (Getting Started)
-패키지 설치
+## 🚀 실행 방법 (Getting Started)
+```
+1. 의존성 라이브러리 설치
+   npm install
 
-Bash
-npm install
-개발 서버 실행
+2. 개발 서버 실행
+   npm run dev
 
-Bash
-npm run dev
+3. 브라우저 접속
 브라우저에서 http://localhost:5173 접속
-
-    },
-  },
-])
 ```

@@ -38,7 +38,7 @@ Persona Lab은 5가지의 개별적인 재미있는 웹 애플리케이션을 �
   - **Response Game:** 순수 반응 속도 테스트
 
 ## 🧠 사용된 AI 모델 (AI Models)
-이 프로젝트는 `face-api.js`의 경량화된 모델들을 사용하여 브라우저 환경에서 실시간 얼굴 추론을 수행합니다. 빠른 인식을 위해 `src/assets/models` 폴더에 다음 파일들이 포함되어 있습니다.
+이 프로젝트는 `face-api.js`의 경량화된 모델들을 사용하여 브라우저 환경에서 실시간 얼굴 추론을 수행합니다. 빠른 인식을 위해 `public/models` 폴더에 다음 파일들이 포함되어 있습니다.
 | 모델명 (Model Name) | 역할 및 기능 | 특징 |
 | :--- | :--- | :--- |
 | **Tiny Face Detector** | 실시간 얼굴 검출 (Detection) | 웹캠 환경에 최적화된 가볍고 빠른 감지 성능 제공 |
@@ -48,8 +48,9 @@ Persona Lab은 5가지의 개별적인 재미있는 웹 애플리케이션을 �
 ## 📁 프로젝트 구조 (Directory Structure)
 
 ```text
+public/
+└── models/             # 🧠 face-api.js AI 학습 모델 파일
 src/
-├── assets/models/      # 🧠 face-api.js AI 학습 모델 파일
 └── apps/               # 🚀 개별 애플리케이션 모음
     ├── face-finder/    # 얼굴 인식 기반 앱 1
     ├── mbti/           # 부캐 성향 분석 앱
